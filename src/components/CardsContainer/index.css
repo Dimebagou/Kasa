@@ -1,0 +1,23 @@
+.cards-container {
+    position: relative;
+    width: 100%;
+    padding: 5.6rem 5rem 9.6rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6rem;
+    row-gap: 5rem;
+    margin-top: 4.3rem;
+    border-radius: 2.5rem;
+    background-color: var(--cardContainerBackground);
+}
+
+.btnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    padding: 4rem;
+}
+

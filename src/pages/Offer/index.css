@@ -1,0 +1,65 @@
+.offer-header {
+    color: var(--primary);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h2 {
+    margin-block: 1rem;
+    font-weight: 400;
+}
+
+.title h4 {
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.host h4 {
+    word-wrap: normal;
+    font-weight: 400;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.hostPic {
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ratings {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.rating {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.modals {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7.6rem;
+}
+
+.offerBtnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40%;
+    margin-top: 4rem;
+}

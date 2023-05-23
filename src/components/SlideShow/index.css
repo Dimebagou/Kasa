@@ -1,0 +1,59 @@
+.slideshow {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5rem;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 2.5rem;
+}
+
+.slideshowSlider {
+    border-radius: 2.5rem;
+    white-space: nowrap;
+    transition: all 1s ease-in-out;
+}
+
+.slide {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 41.5rem;
+    width: 100%;
+    border-radius: 2.5rem;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    cursor: pointer;
+    transition: transform 0.3s;
+    height: 8rem; /* Remplacez la valeur par la hauteur réelle de l'élément */
+    margin-top: -4rem; /* La moitié de la hauteur de l'élément, négatif */
+}
+
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+
+.left {
+    
+    left: 2rem;
+    
+}
+
+.right {
+    
+    right: 2rem;
+    
+}
+
+.arrow img {
+    transition: all 0.3s;
+}
+
+.arrow:hover img {
+    transform: scale(1.2);
+}

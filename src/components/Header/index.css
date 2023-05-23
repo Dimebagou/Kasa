@@ -1,0 +1,50 @@
+nav {
+    background: var(--background);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 4rem 10rem 4rem 10rem; ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 6rem;
+}
+
+.menu a {
+    position: relative;
+    color: var(--primary);
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    font-weight: 500;
+}
+
+.menu a::before,
+.menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: var(--primary);
+    transition: width 0.3s ease; /* Ajoutez une transition pour l'animation */
+}
+
+.menu a::before {
+    transform: translateX(-50%);
+}
+
+.menu a::after {
+    transform: translateX(-50%);
+}
+
+.menu a:hover::before,
+.menu a:hover::after {
+    width: 100%; /* Réglez la largeur sur 50% pour étendre la ligne jusqu'aux extrémités */
+}

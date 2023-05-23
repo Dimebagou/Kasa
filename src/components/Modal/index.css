@@ -1,0 +1,85 @@
+.modal {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 1.8rem;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.modal-header h3 {
+  color: var(--secondary);
+  font-weight: 400;
+}
+
+.modal-header img {
+  width: 2.4rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.modal-header img:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 0.5rem var(--secondary);
+}
+
+.modal-content {
+  background-color: var(--cardContainerBackground);
+  opacity: 0;
+
+  visibility: hidden;
+  padding: 0rem 0rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.modal-content.visible {
+  visibility: visible;
+  padding: 3rem 2rem;
+  height: auto;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.3s padding 0s ease-in-out;
+}
+
+
+
+.modal-content p {
+  line-height: 3rem;
+  display: none;
+  visibility: hidden;
+  color: var(--primary);
+  font-size: 2.4rem;
+  transition: all 0.3s;
+}
+
+
+
+.modal-content.visible p {
+  display: block;
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.modal-content p span {
+  line-height: 3rem;
+  display: none;
+  visibility: hidden;
+  color: var(--primary);
+  font-size: 2.4rem;
+  transition: all 0.3s;
+}
+
+.modal-content.visible p span {
+  display: block;
+  visibility: visible;
+  transition: all 0.3s;
+}

@@ -1,0 +1,48 @@
+.error {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error404 {
+    font-size: 28.8rem;
+    color: var(--primary);
+}
+
+.error h2 {
+    color: var(--primary);
+}
+
+.error a {
+    margin-top: 18rem;
+    position: relative;
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.error a::before,
+.error a::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: var(--primary);
+    transition: width 0.3s ease; /* Ajoutez une transition pour l'animation */
+}
+
+.error a::before {
+    transform: translateX(-50%);
+}
+
+.error a::after {
+    transform: translateX(-50%);
+}
+
+.error a:hover::before,
+.error a:hover::after {
+    width: 100%; /* Réglez la largeur sur 50% pour étendre la ligne jusqu'aux extrémités */
+}
